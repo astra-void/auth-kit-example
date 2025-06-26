@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astra-void/auth-kit':
-        specifier: ^0.3.7
-        version: 0.3.7(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: ^0.4.0
+        version: 0.4.0(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@prisma/client':
         specifier: 6.10.1
         version: 6.10.1(prisma@6.10.1(typescript@5.8.3))(typescript@5.8.3)
@@ -68,8 +68,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@astra-void/auth-kit@0.3.7':
-    resolution: {integrity: sha512-6tKPTUguEc1teWrOPa3iUfEyEcAb2hmi0tCPmiwkp+Rs+nhNKYwKxobRK7mc5NOE95J2agPX9Wl15W6nXnMxsg==}
+  '@astra-void/auth-kit@0.4.0':
+    resolution: {integrity: sha512-yH8U9PYVxyWFVtqQMo2GwZg0b0f5zt2Q8jL2cak26VWtKY/bDYPTUIfDl5ZiP5RO+U9FtQlg4b1kal27Qtm5pg==}
     peerDependencies:
       next: ^15.3.3
       react: ^19.1.0
@@ -1990,7 +1990,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@astra-void/auth-kit@0.3.7(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@astra-void/auth-kit@0.4.0(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@noble/hashes': 1.8.0
       '@panva/hkdf': 1.2.1
