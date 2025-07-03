@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astra-void/auth-kit':
-        specifier: ^0.4.0
-        version: 0.4.0(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: ^0.5.0
+        version: 0.5.0(argon2@0.43.0)(bcrypt@6.0.0)(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@prisma/client':
         specifier: 6.10.1
         version: 6.10.1(prisma@6.10.1(typescript@5.8.3))(typescript@5.8.3)
@@ -68,9 +68,11 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@astra-void/auth-kit@0.4.0':
-    resolution: {integrity: sha512-yH8U9PYVxyWFVtqQMo2GwZg0b0f5zt2Q8jL2cak26VWtKY/bDYPTUIfDl5ZiP5RO+U9FtQlg4b1kal27Qtm5pg==}
+  '@astra-void/auth-kit@0.5.0':
+    resolution: {integrity: sha512-cjY3lAE0pws65qjaH9tVAHs3KJ9BGTiMMskLFaI7RNsECTf8Quu+x64mB9Awls+0mtyiNXwKlkVzsqZetqw4BA==}
     peerDependencies:
+      argon2: ^0.43.0
+      bcrypt: ^6.0.0
       next: ^15.3.3
       react: ^19.1.0
       react-dom: ^19.1.0
@@ -1990,7 +1992,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@astra-void/auth-kit@0.4.0(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@astra-void/auth-kit@0.5.0(argon2@0.43.0)(bcrypt@6.0.0)(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@noble/hashes': 1.8.0
       '@panva/hkdf': 1.2.1
@@ -1998,13 +2000,12 @@ snapshots:
       '@simplewebauthn/server': 13.1.1
       argon2: 0.43.0
       axios: 1.10.0
+      bcrypt: 6.0.0
       jose: 6.0.11
       next: 15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       uuid: 11.1.0
-    optionalDependencies:
-      bcrypt: 6.0.0
     transitivePeerDependencies:
       - debug
 
@@ -2707,7 +2708,6 @@ snapshots:
     dependencies:
       node-addon-api: 8.4.0
       node-gyp-build: 4.8.4
-    optional: true
 
   brace-expansion@1.1.12:
     dependencies:
