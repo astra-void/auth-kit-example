@@ -7,12 +7,11 @@ import { FormEvent, useState } from "react";
 const LoginPage = () => {
     const { data: session } = useSession();
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
 
     const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         
-        await login('credentials', { email, password });
+        await login('magiclink', { email });
     }
 
     if (session.user){
@@ -37,13 +36,6 @@ const LoginPage = () => {
                     className="p-2 border border-gray-300 rounded-lg"
                     required
                     onChange={(e) => setEmail(e.target.value)}
-                />
-                <input
-                    type="password"
-                    placeholder="Password"
-                    className="p-2 border border-gray-300 rounded-lg"
-                    required
-                    onChange={(e) => setPassword(e.target.value)}
                 />
                 <button
                     type="submit"

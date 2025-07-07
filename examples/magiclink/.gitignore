@@ -1,8 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-node_modules
-.pnp
+/node_modules
+/.pnp
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -14,7 +14,7 @@ node_modules
 /coverage
 
 # next.js
-.next
+/.next/
 /out/
 
 # production
@@ -30,10 +30,8 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-examples/default/app/generated
-examples/magiclink/app/generated
-examples/passkey/email/app/generated
-examples/passkey/credential/app/generated
+# env files (can opt-in for committing if needed)
+.env*
 
 # vercel
 .vercel
@@ -41,5 +39,3 @@ examples/passkey/credential/app/generated
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-main.db
