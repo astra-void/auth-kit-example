@@ -1,7 +1,6 @@
 'use client';
 
 import { login, useSession } from "@astra-void/auth-kit/react";
-import { loginPasskey } from "@astra-void/auth-kit/react/passkey";
 import Link from "next/link";
 import { FormEvent, useState } from "react";
 
@@ -19,10 +18,10 @@ const LoginPage = () => {
             setCurrentTab(1);
             return;
         } else if (currentTab === 0 && loginType === 'passkey') {
-            await loginPasskey({}); 
+            await login('passkey'); 
             return;
         } else if (currentTab === 1 && password && loginType === 'default') {
-            await login({ email, password });
+            await login('credentials', { email, password });
             return;
         }
     };

@@ -12,7 +12,7 @@ const RegisterPage = () => {
     const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        await register({ email, password });
+        await register('credentials', { email, password });
     };
 
     if (session.user){

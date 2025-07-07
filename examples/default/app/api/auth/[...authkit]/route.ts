@@ -5,6 +5,7 @@ import { CredentialsProvider } from "@astra-void/auth-kit/providers";
  
 const handler = AuthKit({
   adapter: PrismaAdapter(prisma),
+  algorithm: 'argon2',
   providers: [
     CredentialsProvider(),
   ],

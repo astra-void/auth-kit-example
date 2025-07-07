@@ -1,7 +1,6 @@
 'use client';
 
-import { logout, useSession } from "@astra-void/auth-kit/react";
-import { registerPasskey } from "@astra-void/auth-kit/react/passkey";
+import { logout, register, useSession } from "@astra-void/auth-kit/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -14,7 +13,7 @@ export default function Home() {
   }
 
   const handleRegister = async () => {
-    await registerPasskey();
+    await register('passkey');
   }
 
   return (
